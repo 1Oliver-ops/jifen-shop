@@ -23,7 +23,7 @@ export default function UserDashboard() {
 
       try {
         // 获取用户信息
-        const userRes = await axios.post('https://jifen-backend-tgymzhopax.cn-hangzhou.fcapp.run', {
+        const userRes = await axios.post('https://jifen-backend-tgymzhopax.cn-hangzhou.fcapp.run/api/user/info', {
           user_id: userId,
         });
 

@@ -18,7 +18,7 @@ export default function LoginPage() {
     setLoading(true);
 
     try {
-      const response = await axios.post('https://jifen-backend-tgymzhopax.cn-hangzhou.fcapp.run', {
+      const response = await axios.post('https://jifen-backend-tgymzhopax.cn-hangzhou.fcapp.run/api/login', {
         phone,
         password,
       });

@@ -30,7 +30,7 @@ export default function AdminDashboard() {
         // 获取所有订单
         const ordersRes = await axios.get('https://jifen-backend-tgymzhopax.cn-hangzhou.fcapp.run/api/admin/orders');
         // 获取积分日志（计算总消耗）
-        const logsRes = await axios.get('http://jifen-backend-tgymzhopax.cn-hangzhou.fcapp.run/api/admin/point-logs');
+        const logsRes = await axios.get('https://jifen-backend-tgymzhopax.cn-hangzhou.fcapp.run/api/admin/point-logs');
 
         const users = usersRes.data.users || [];
         const orders = ordersRes.data.orders || [];
